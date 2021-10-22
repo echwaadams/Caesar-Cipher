@@ -1,5 +1,7 @@
 package modules;
 
+import java.util.Scanner;
+
 public class App {
     static String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -28,5 +30,24 @@ public class App {
         }
         return pText;
 
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("**************************************************");
+        System.out.println("Welcome To Caesar Cipher commandline Application!");
+        System.out.println("**************************************************");
+
+        System.out.println("Enter plain text to be Encrypted >>");
+        String plain = scan.nextLine();
+
+        System.out.println("Enter key >> ");
+        int Key = Integer.parseInt(scan.nextLine());
+
+        String cipherText = encoding(plain, Key);
+
+        System.out.println("The cipher text is: " + cipherText);
+        System.out.println("The decoded message is : " + decoding(cipherText, Key));
     }
 }
