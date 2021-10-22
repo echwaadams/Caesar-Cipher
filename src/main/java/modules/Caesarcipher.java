@@ -1,6 +1,12 @@
 package modules;
 
 public class Caesarcipher {
-    public Caesarcipher() {
+    private String pText;
+
+    public Caesarcipher(String pText) {
+        this.pText = pText;
+    }
+    public String getPText(){
+        return this.pText;
     }
 }
