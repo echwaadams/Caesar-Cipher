@@ -6,4 +6,7 @@ public class App {
     public static String encoding(String pText, int Key){
 
     }
+    public static String decoding(String cText, int Key){
+
+    }
 }
