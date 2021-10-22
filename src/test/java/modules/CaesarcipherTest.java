@@ -11,5 +11,13 @@ class CaesarcipherTest {
         String expected = "a";
         assertEquals(true, testString instanceof String);
     }
+    @Test
+    public void newIntegers_getKey() throws Exception{
+        String testString = new String();
+        String expected = "a";
+        Integer intExpected = 1;
+        assertEquals(true, testString instanceof String);
+    }
+
 
 }
