@@ -9,10 +9,10 @@ public class App {
         pText = pText.toLowerCase();
         String cText = " ";
         for (int i = 0; i < pText.length(); i++){
-            int charIndex = alphabet.indexOf(pText.charAt(i));
-            int newIndex = (charIndex + Key) % 26;
-            char cipherChar = alphabet.charAt(newIndex);
-            cText = cText + cipherChar;
+            int charIndexed = alphabet.indexOf(pText.charAt(i));
+            int newIndex = (charIndexed+ Key) % 26;
+            char cipheredChar = alphabet.charAt(newIndex);
+            cText = cText + cipheredChar;
         }
         return cText;
     }
@@ -20,8 +20,8 @@ public class App {
         cText = cText.toLowerCase();
         String pText = " ";
         for (int i = 0; i < cText.length(); i++){
-            int charIndex = alphabet.indexOf(cText.charAt(i));
-            int newIndex = (charIndex - Key) % 26;
+            int charIndexed = alphabet.indexOf(cText.charAt(i));
+            int newIndex = (charIndexed - Key) % 26;
             if (newIndex < 0){
                 newIndex = alphabet.length() + newIndex;
             }
